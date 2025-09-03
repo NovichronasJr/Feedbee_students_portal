@@ -1,26 +1,17 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import "tailwindcss";
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+/* Hide scrollbar but allow scrolling globally */
 * {
-  box-sizing: border-box;
-}
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  *::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body{
+    background-color: black;
+    color:white
 }
