@@ -4,7 +4,7 @@ import Image from "next/image";
 import axios from "axios";
 import FeedbackSlider from "../../../components/feedback_slider";
 
-export default function feedbackPage(){
+export default function FeedbackPage(){
 const router = useRouter();
 const {feedback_id} = router.query
 const [feedback_details,setFeedbackDetails] = useState([]);
