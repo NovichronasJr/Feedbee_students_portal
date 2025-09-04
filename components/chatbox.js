@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 export default function AIChatBox({ student_id, teacher_id }) {
   const router = useRouter();
-  const genAI = new GoogleGenerativeAI("AIzaSyA0d9xjIL4uHMop-HnOqPcUDMMPT6RZ4bU");
+  const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GEMINI_API_KEY);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [generatedComments, setGeneratedComments] = useState(null);
